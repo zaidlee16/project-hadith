@@ -13,7 +13,7 @@ function getListHadiths() {
             <h2>${h.name}</h2>
             <p>Jumlah Hadits : <b>${h.available}</b></p>
             <a class="btn btn-secondary w-100"
-            href="/hadiths/${h.id}.html">
+            href="./hadiths/${h.id}.html">
             Klik Disini
             </a>
           </div>
