@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hadiths Abu Daud</title>
+    <style>
+        body {
+            padding: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center">
+        <h2>Hadiths Riwayat Abu Daud</h2>
+        <input type="text" id="search-id" class="card-hadiths w-25 p-1" placeholder="Cari Hadiths Abu Daud">
+        <button class="btn btn-secondary me-1" onclick="btnSearch()">Cari Hadiths</button>
+    </div>
+
+    <h2 id="title-search"></h2>
+    <div id="output-search"></div>
+
+    <h2>Pencarian Hadiths</h2>
+    <div id="output-hadiths"></div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+        integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../main.js"></script>
+    <script>
+        getHadithsById()
+    </script>
+</body>
+
+</html>

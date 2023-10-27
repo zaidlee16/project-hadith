@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rabbaanii Hadiths</title>
+</head>
+
+<body>
+    <header class="py-4 px-5 ">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder fs-4" href="#"><i class="fa-solid fa-book-quran"></i> Rabbaanii
+                    Hadiths</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button
+                            class="btn btn-secondary btn-my-hadiths d-flex align-items-center justify-content-center"
+                            type="submit">My Hadiths <i class="fa-solid fa-bookmark ms-1 fs-6"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="home vh-100 d-flex justify-content-center align-items-center text-white">
+                <h1>Find Your Hadiths Here!</h1>
+            </div>
+        </section>
+    </main>
+
+    <section class="container-fluid py-2 px-5">
+        <h2 class="mb-3">Hadits Pilihan</h2>
+        <div id="output"></div>
+    </section>
+
+    <div class="card text-center">
+        <div class="card-header bg-body-secondary">
+            by Zaid Lee
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Rabbaanii Hadiths</h5>
+            <p class="card-text">Find your hadiths here.</p>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+        integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+    <script>
+        getListHadiths()
+    </script>
+</body>
+
+</html>
